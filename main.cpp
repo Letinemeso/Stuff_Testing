@@ -71,86 +71,13 @@ int main()
 }
 */
 
-#include "Data_Structures/Vector.h"
-#include <vector>
-
-#include <iostream>
-#include <chrono>
-
-class Test
-{
-private:
-	int* arr = nullptr;
-
-public:
-	Test()
-	{
-		arr = new int[10];
-		for(unsigned int i=0; i<10; ++i)
-			arr[i] = i;
-	}
-
-	Test(const Test& _other)
-	{
-		arr = new int[10];
-		for(unsigned int i=0; i<10; ++i)
-			arr[i] = _other.arr[i];
-	}
-
-	~Test()
-	{
-		delete[] arr;
-	}
-
-};
+#include <MDL_Reader.h>
 
 int main()
 {
-	std::chrono::high_resolution_clock::time_point start;
-	std::chrono::high_resolution_clock::time_point end;
-	std::chrono::duration<float> duration;
 
-	//	std::vector Test
-
-	std::vector<Test> stdvec;
-
-	for(unsigned int i=0; i<10000000; ++i)
-		stdvec.push_back({});
-
-	start = std::chrono::high_resolution_clock::now();
-
-	std::vector<Test>::iterator stdvit = stdvec.begin();
-	while(stdvit != stdvec.end())
-		++stdvit;
-
-	end = std::chrono::high_resolution_clock::now();
-
-	duration = end - start;
-	std::cout << "std::vector:\t" << duration.count() << "\n\n";
-
-	//	~std::vector Test
-
-
-	//	LDS::Vector Test
-
-	LDS::Vector<Test> ldsvec;
-
-	for(unsigned int i=0; i<10000000; ++i)
-		ldsvec.push({});
-
-	start = std::chrono::high_resolution_clock::now();
-
-	LDS::Vector<Test>::Iterator ldsvit = ldsvec.iterator();
-	while(!ldsvit.end_reached())
-		++ldsvit;
-
-	end = std::chrono::high_resolution_clock::now();
-
-	duration = end - start;
-	std::cout << "LDS::Vector:\t" << duration.count() << "\n\n";
-
-	//	~LDS::Vector Test
-
+	LV::MDL_Reader reader;
+	reader.parse_file("../format_test");
 
 
 	return 0;
