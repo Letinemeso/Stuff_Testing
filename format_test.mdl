@@ -1,3 +1,19 @@
+<Test> |Test_Stub|
+\
+    |ass|
+    \
+        "6637373"
+    /
+    |stuff|
+    \
+        "true"
+    /
+    |string|
+    \
+        "balaclava"
+    /
+/
+
 <LV::Some_Complex_Variable> |variable_name|
 \
     |some_values|
@@ -13,6 +29,10 @@
         "str" "balaclava"
     /
 /
+
+
+
+
 <LV::Some_Complex_Variable> |ass|
 \
     |some_values|
@@ -26,5 +46,13 @@
     |some_strings|
     \
         "str" "balaclava"
+    /
+/
+
+<int> |count|
+\
+    |value|
+    \
+        "6637373"
     /
 /

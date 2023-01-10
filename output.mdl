@@ -1,0 +1,58 @@
+# This file was auto generated #
+
+<Test> |Test_Stub|
+\
+	|ass|
+	\
+		"-6637373" 
+	/
+	|string|
+	\
+		"balaclava" 
+	/
+	|stuff|
+	\
+		"true" 
+	/
+/
+
+<LV::Some_Complex_Variable> |ass|
+\
+	|some_string|
+	\
+		"str" 
+	/
+	|some_strings|
+	\
+		"str" "balaclava" 
+	/
+	|some_values|
+	\
+		"1" "2" "3" 
+	/
+/
+
+<int> |count|
+\
+	|value|
+	\
+		"6637373" 
+	/
+/
+
+<LV::Some_Complex_Variable> |variable_name|
+\
+	|some_string|
+	\
+		"str" 
+	/
+	|some_strings|
+	\
+		"str" "balaclava" 
+	/
+	|some_values|
+	\
+		"1" "2" "3" 
+	/
+/
+
