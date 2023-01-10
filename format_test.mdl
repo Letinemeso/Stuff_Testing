@@ -1,4 +1,4 @@
-<Test> |Test_Stub|
+|Test_Stub|
 \
     |ass|
     \
@@ -14,7 +14,7 @@
     /
 /
 
-<LV::Some_Complex_Variable> |variable_name|
+|variable_name|
 \
     |some_values|
     \
@@ -33,7 +33,7 @@
 
 
 
-<LV::Some_Complex_Variable> |ass|
+|ass|
 \
     |some_values|
     \
@@ -49,7 +49,7 @@
     /
 /
 
-<int> |count|
+|count|
 \
     |value|
     \

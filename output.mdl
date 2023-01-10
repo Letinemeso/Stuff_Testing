@@ -1,10 +1,10 @@
 # This file was auto generated #
 
-<Test> |Test_Stub|
+|Test_Stub|
 \
 	|ass|
 	\
-		"-6637373" 
+		"6637373" 
 	/
 	|string|
 	\
@@ -16,7 +16,7 @@
 	/
 /
 
-<LV::Some_Complex_Variable> |ass|
+|ass|
 \
 	|some_string|
 	\
@@ -32,7 +32,7 @@
 	/
 /
 
-<int> |count|
+|count|
 \
 	|value|
 	\
@@ -40,7 +40,7 @@
 	/
 /
 
-<LV::Some_Complex_Variable> |variable_name|
+|variable_name|
 \
 	|some_string|
 	\
