@@ -5,3 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp
+
+INCLUDEPATH += \
+	"../Utility/include"
+
+LIBS += \
+	"../../Utility/Build/libUtility.a";
