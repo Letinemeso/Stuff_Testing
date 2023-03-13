@@ -1,66 +1,22 @@
 # This file was auto generated #
 
+|Test_Child|
+\
+	|value|
+	\
+		"some other text" 
+	/
+/
+
 |Test_Stub|
 \
 	|arr|
 	\
-		"1" "2" "3" "4" 
+		"1" "2" "3" 
 	/
 	|arr_size|
 	\
-		"4" 
-	/
-	|ass|
-	\
-		"6637373" 
-	/
-	|string|
-	\
-		"balaclava" 
-	/
-	|stuff|
-	\
-		"true" 
-	/
-/
-
-|ass|
-\
-	|some_string|
-	\
-		"str" 
-	/
-	|some_strings|
-	\
-		"str" "balaclava" 
-	/
-	|some_values|
-	\
-		"1" "2" "3" 
-	/
-/
-
-|count|
-\
-	|value|
-	\
-		"6637373" 
-	/
-/
-
-|variable_name|
-\
-	|some_string|
-	\
-		"str" 
-	/
-	|some_strings|
-	\
-		"str" "balaclava" 
-	/
-	|some_values|
-	\
-		"1" "2" "3" 
+		"3" 
 	/
 /
 

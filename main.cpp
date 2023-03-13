@@ -3,17 +3,31 @@
 #include <Variable_Base.h>
 
 
+class Child : public LV::Variable_Base
+{
+    DECLARE_VARIABLE;
+
+public:
+    std::string value;
+
+};
+
+INIT_FIELDS(Child, Variable_Base)
+
+ADD_FIELD(std::string, value);
+
+FIELDS_END
+
+
 class Test : public LV::Variable_Base
 {
 	DECLARE_VARIABLE;
 
 private:
-	int ass = 0;
-	bool stuff = false;
-	std::string string;
-
 	int* arr = nullptr;
 	int arr_size = 0;
+
+    Child child;
 
 public:
 	Test()
@@ -21,8 +35,9 @@ public:
 	}
 
 	void print() const
-	{
-		std::cout << string << "\n" << ass << "\n" << stuff << "\n";
+    {
+        std::cout << "Child: " << child.value << "\n";
+
 		for(unsigned int i=0; i<(unsigned int)arr_size; ++i)
 			std::cout << arr[i] << " ";
 		std::cout << "\n\n";
@@ -32,12 +47,10 @@ public:
 
 INIT_FIELDS(Test, Variable_Base)
 
-ADD_FIELD(int, ass);
-ADD_FIELD(bool, stuff);
-ADD_FIELD(std::string, string);
-
 ADD_FIELD(int*, arr);
 ADD_FIELD(int, arr_size);
+
+ADD_CHILD(child);
 
 FIELDS_END
 
@@ -105,6 +118,10 @@ int main()
 	Test test;
 	test.assign_values(reader.get_stub("Test_Stub"));
 	test.print();
+
+    Child child;
+    child.assign_values(reader.get_stub("Test_Child"));
+    std::cout << child.value << "\n";
 
 	reader.save_to_file("../output");
 

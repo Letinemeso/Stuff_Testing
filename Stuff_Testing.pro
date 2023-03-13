@@ -6,18 +6,18 @@ CONFIG -= qt
 SOURCES += \
         main.cpp
 
-INCLUDEPATH += "../MDL_Parser/include"
+INCLUDEPATH += "../L_Variable/include"
 
-INCLUDEPATH += "../Utility/include"
-INCLUDEPATH += "../Utility/include/Data_Structures"
-INCLUDEPATH += "../Utility/include/Debug"
+INCLUDEPATH += "../L_Utility/include"
+INCLUDEPATH += "../L_Utility/include/Data_Structures"
+INCLUDEPATH += "../L_Utility/include/Debug"
 
 win32 {
-    LIBS += "../../MDL_Parser/Build/debug/libMDL_Parser.a"
-    LIBS += "../../Utility/Build/debug/libUtility.a"
+    LIBS += "../../L_Variable/Build/debug/libMDL_Parser.a"
+    LIBS += "../../L_Utility/Build/debug/libL_Utility.a"
 }
 
 unix {
-    LIBS += "../../MDL_Parser/Build/libMDL_Parser.a"
-    LIBS += "../../Utility/Build/libUtility.a"
+    LIBS += "../../L_Variable/Build/libL_Variable.a"
+    LIBS += "../../L_Utility/Build/libL_Utility.a"
 }
