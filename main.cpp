@@ -9,12 +9,14 @@ class Child : public LV::Variable_Base
 
 public:
     std::string value;
+    int ass;
 
 };
 
 INIT_FIELDS(Child, Variable_Base)
 
-ADD_FIELD(std::string, value);
+ADD_FIELD(std::string, value)
+ADD_FIELD(int, ass)
 
 FIELDS_END
 
@@ -28,6 +30,7 @@ private:
 	int arr_size = 0;
 
     Child child;
+    Child child2;
 
 public:
 	Test()
@@ -47,10 +50,11 @@ public:
 
 INIT_FIELDS(Test, Variable_Base)
 
-ADD_FIELD(int*, arr);
-ADD_FIELD(int, arr_size);
+ADD_FIELD(int*, arr)
+ADD_FIELD(int, arr_size)
 
-ADD_CHILD(child);
+ADD_CHILD(child)
+ADD_CHILD(child2)
 
 FIELDS_END
 

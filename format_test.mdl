@@ -1,3 +1,23 @@
+|Test_Child|
+\
+    |value|
+    \
+        "
+        /
+        some other text
+        
+        /
+        
+        \
+        "
+    /
+    
+    |ass|
+    \
+        "123"    
+    /
+/
+
 |Test_Stub|
 \
     
@@ -7,6 +27,25 @@
         |value|
         \
             "some text"
+        /
+    
+        |ass|
+        \
+            "123"    
+        /
+    
+    /
+    ||child2||
+    \
+    
+        |value|
+        \
+            "some text 2"
+        /
+    
+        |ass|
+        \
+            "123321"    
         /
     
     /
@@ -21,10 +60,4 @@
     /
 /
 
-|Test_Child|
-\
-    |value|
-    \
-        "some other text"
-    /
-/
+

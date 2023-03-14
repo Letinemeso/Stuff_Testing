@@ -1,14 +1,25 @@
 # This file was auto generated #
 
-|Test_Child|
+||Test_Child||
 \
+	|ass|
+	\
+		"123" 
+	/
 	|value|
 	\
-		"some other text" 
+		"
+        /
+        some other text
+        
+        /
+        
+        \
+        " 
 	/
 /
 
-|Test_Stub|
+||Test_Stub||
 \
 	|arr|
 	\
@@ -17,6 +28,28 @@
 	|arr_size|
 	\
 		"3" 
+	/
+	||child||
+	\
+		|ass|
+		\
+			"123" 
+		/
+		|value|
+		\
+			"some text" 
+		/
+	/
+	||child2||
+	\
+		|ass|
+		\
+			"123321" 
+		/
+		|value|
+		\
+			"some text 2" 
+		/
 	/
 /
 
