@@ -6,12 +6,12 @@ CONFIG -= qt
 SOURCES += \
         main.cpp
 
-INCLUDEPATH += "../Utility/include"
+INCLUDEPATH += "../L_Utility/include"
 
 win32 {
-    LIBS += "../../Utility/Build/debug/libUtility.a"
+    LIBS += "../../L_Utility/Build/debug/libL_Utility.a"
 }
 
 unix {
-    LIBS += "../../Utility/Build/libUtility.a"
+    LIBS += "../../L_Utility/Build/libL_Utility.a"
 }
